@@ -5,5 +5,5 @@ import org.springframework.stereotype.Component
 
 @Component
 @EnableScheduling
-class PlaneFinderPoller() {
+class PlaneFinderPoller(private val repository: AircraftRepository) {
 }
